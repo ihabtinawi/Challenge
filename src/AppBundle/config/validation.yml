@@ -1,0 +1,7 @@
+src/AppBundle/Entity/Answer:
+  properties:
+    name:
+      - NotBlank: ~
+      - MinLength: 3
+    url:
+      - NotBlank: ~

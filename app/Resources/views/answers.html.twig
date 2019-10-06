@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="headline">
+    <h1>The question was: </h1>
+</div>
+<div class="question">
+    {{ question.question }}
+</div>
+<div class="form-style">
+    <p>The Answers for this questions where</p>
+</div>
+<div class="">
+    <ul>
+        {% for answer in answers %}
+            <li class="list-item">{{ answer.answer }} </li>
+        {% endfor %}
+    </ul>
+</div>
+<div>
+    <a class="btn btn-success" href="{{ path('statistics') }}">Go to statistics</a>
+</div>
+{% endblock %}

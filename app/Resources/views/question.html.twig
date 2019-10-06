@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="headline">
+    <h1>The Question of this day is</h1>
+</div>
+<div>
+    <div class="question">
+        {{ question.question }}
+    </div>
+    <div class="form-style">
+        {{ form_start(form) }}
+        <div style="display:none">
+            {{form_widget(form.question)}}
+        </div>
+
+        <div class="row">
+            {{ form_label(form.answer) }}
+            {{ form_errors(form.answer) }}
+            {{ form_widget(form.answer) }}
+        </div>
+
+        <div class="row">
+            {{ form_label(form.mood) }}
+            {{ form_errors(form.mood) }}
+            {{ form_widget(form.mood) }}
+        </div>
+
+        <div class="row">
+            {{ form_widget(form.save) }}
+        </div>
+
+        {{ form_end(form) }}
+    </div>
+</div>
+{% endblock %}

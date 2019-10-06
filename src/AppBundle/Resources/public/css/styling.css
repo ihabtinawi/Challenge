@@ -1,0 +1,73 @@
+body {
+    max-width: 952px;
+    margin: 0 auto;
+}
+.headline {
+    width: calc(100% - 6px);
+    color: green;
+    background-color: yellow;
+    border: 3px solid green;
+    text-align: center;
+}
+.question {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 2em;
+    color: red;
+    border-top-style: none;
+    border-left-style: none;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    font-size: 2em;
+}
+.row label {
+    flex-grow: 1;
+}
+.row input {
+    font-size: 1em;
+    text-align: right;
+}
+.row button {
+    font-size: 0.7em;
+    width: 110px;
+    height: 40px;
+    background-color: white;
+}
+#form #form_answer label{
+    display:inline-block;
+
+}
+#form #form_mood input {
+    margin-left: 20px;
+}
+
+.btn {
+    border-radius: 3px;
+    box-shadow: none;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 2em;
+}
+.btn-success {
+    background-color: #00a65a;
+    border-color: #008d4c;
+    font-size: 2em;
+    margin-left: 25%;
+    text-decoration: none;
+}
+#form div {
+    margin-bottom: 15px;
+}
+.list-item {
+    font-size: 20px;
+    color: blue;
+    background-color: lightgray;
+    width: 25%;
+    height: 30px;
+    margin-left: 30%;
+}

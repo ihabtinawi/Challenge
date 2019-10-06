@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+<div class="headline">
+    <h1>The Avarage of mood for users in the last week (1 is Sundy...)</h1>
+</div>
+<div class="form-style">
+{% for key,value  in statistics %}
+    {{ key }} => {{ value }}
+    ,
+{% endfor %}
+</div>
+{% endblock %}
